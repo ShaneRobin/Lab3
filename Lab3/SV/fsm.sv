@@ -6,7 +6,7 @@ module FSM (clk, reset, a, y);
    
    output logic y;
 
-   typedef enum 	logic [1:0] {S0, S1, S2} statetype;
+   typedef enum 	logic [5:0] {S0, S1, S2, S3, S4, S5, S6, S7, S8} statetype;
    statetype state, nextstate;
    
    // state register
