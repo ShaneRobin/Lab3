@@ -22,6 +22,7 @@ module FSM (clk, reset, left, right, y);
     if (right && left) nextstate <= S7; 
 	  else if (left) nextstate <= S1;
     else if (right) nextstate <= S4;
+    else nextstate <= S0;
     
        end
        S1: begin
